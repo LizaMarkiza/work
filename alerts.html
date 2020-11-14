@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <h1>Alerts and buttons</h1>
+        <button onclick="alert('Hello World')">Click Me</button>
+        <!-- <button id="btn">Click Me</button> -->
+        <button id="btn">Click Me Too</button>
+        <!-- <button onclick="alertFunction()">CLICK ME BABY</button> -->
+    </body>
+    <script>
+        // const btn = document.querySelector('#btn');
+        // btn.onclick = () => alert("Hello World");  
+        const btn = document.querySelector('#btn');
+        // btn.addEventListener('click', () => {
+        // alert("Hello World");
+        // });
+
+        // function alertFunction() {
+        //     alert("YAY! YOU DID IT!");
+        // };
+        // btn.addEventListener('click', function (e) {
+        //     console.log(e.target);
+        // });
+        btn.addEventListener('click', function (e) {
+            e.target.style.background = 'blue';
+        });
+    </script>
+</html>
